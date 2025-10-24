@@ -1,5 +1,5 @@
 site_name: Elasticsearch Containerization Guide
-
+use_directory_urls: true
 theme:
   name: material
   logo: elastic_logo.svg
