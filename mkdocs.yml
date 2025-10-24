@@ -4,15 +4,18 @@ theme:
   name: material
   logo: elastic_logo.svg
   palette:
-    scheme: slate     
+    scheme: slate
     primary: yellow
     accent: yellow
-
   features:
     - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.footer
+
+repo_url: https://github.com/Snehal-Pradhan/elasticsearch-containerization-guide
+repo_name: elasticsearch-containerization-guide
+repo_type: github
 
 nav:
   - Home: index.md
