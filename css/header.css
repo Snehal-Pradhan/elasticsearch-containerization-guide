@@ -1,0 +1,31 @@
+.md-header{
+    background: #1e2129;
+    box-shadow: none;
+    padding-top: 15px;
+    color: silver;
+}
+
+.md-header__topic{
+    margin-left: 0px;
+    padding-left: 0px;
+    transform: translateX(-20px);
+    color: silver;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.md-header .md-search__input {
+    background-color: #15181e;   
+    color: silver;             
+}
+
+
+.md-header .md-search__input::placeholder {
+    color: silver;   
+    opacity: 1;    
+}
+.md-header .md-search__icon {
+    color: silver; 
+}
+.md-nav__title{
+    background-color: #1e2129;
+}
