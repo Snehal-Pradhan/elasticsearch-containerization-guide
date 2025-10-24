@@ -1,0 +1,25 @@
+site_name: Elasticsearch Containerization Guide
+
+theme:
+  name: material
+  logo: elastic_logo.svg
+  palette:
+    scheme: slate     
+    primary: yellow
+    accent: yellow
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Getting Started: gettingStarted.md
+
+extra_css:
+  - css/footer.css
+  - css/header.css
+  - css/body.css
