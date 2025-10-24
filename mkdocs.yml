@@ -12,6 +12,7 @@ theme:
     - navigation.expand
     - navigation.top
     - navigation.footer
+    - content.code.copy
 
 repo_url: https://github.com/Snehal-Pradhan/elasticsearch-containerization-guide
 repo_name: elasticsearch-containerization-guide
@@ -22,7 +23,7 @@ nav:
   - Introduction: introduction.md
   - Dockerization: dockerization.md
   - Getting Started: gettingStarted.md
-  - Single Node without security: singleNodeNoSecurity.md
+  - Single Node – Without Security: singleNodewithoutSecurity.md
 
 extra_css:
   - css/footer.css
