@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#brief-introduction" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -302,9 +302,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#problems" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      problems
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Elasticsearch?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-kibana" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Kibana?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Kibana?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-the-tech-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      In the Tech Ecosystem
     </span>
   </a>
   
@@ -367,9 +427,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#problems" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      problems
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Elasticsearch?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-kibana" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Kibana?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Kibana?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-the-tech-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      In the Tech Ecosystem
     </span>
   </a>
   
@@ -394,17 +514,98 @@
   
 
 
-<h1 id="brief-introduction">Brief introduction</h1>
+<h1 id="introduction">Introduction</h1>
+<h3 id="overview">Overview</h3>
+<p>In modern software systems, <strong>observability</strong> — the ability to understand what’s happening inside a system based on its outputs — is crucial.
+Two technologies that have become foundational in this area are <strong>Elasticsearch</strong> and <strong>Kibana</strong>.</p>
+<p>Together, they form the backbone of the <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana), often extended to <strong>Elastic Stack</strong> (with Beats and other tools).
+They’re used to <strong>store, search, analyze, and visualize logs and metrics</strong> in real time.</p>
+<hr />
+<h3 id="what-is-elasticsearch">What is Elasticsearch?</h3>
+<p><strong>Elasticsearch</strong> is a <strong>distributed, RESTful search and analytics engine</strong> built on top of Apache Lucene.
+Originally designed for text search, it’s now widely used for:</p>
 <ul>
-<li>elastic search is a search and analytics engine which is used professionally world wide.</li>
-<li>often in a good-sized project is used with <strong>docker</strong></li>
+<li><strong>Log storage and retrieval</strong></li>
+<li><strong>Full-text search</strong> (used in search bars, e-commerce, documentation portals)</li>
+<li><strong>Metrics and event data analysis</strong></li>
+<li><strong>Security analytics</strong> (SIEM)</li>
+<li><strong>Business intelligence dashboards</strong></li>
 </ul>
-<h3 id="problems">problems</h3>
+<h3 id="why-it-matters">Why It Matters</h3>
+<p>Elasticsearch is designed for <strong>speed and scalability</strong>.
+It can handle <strong>billions of documents</strong> and return search results in <strong>milliseconds</strong>, even across large distributed clusters.</p>
+<h3 id="what-is-kibana">What is Kibana?</h3>
+<p><strong>Kibana</strong> is the <strong>visualization and analytics UI</strong> for Elasticsearch.
+It lets developers and DevOps engineers:</p>
 <ul>
-<li>its statefull unlike mongo and redis images</li>
-<li>often certs are needed to be stored in volumes created.</li>
-<li>has security features which are needed to be always enabled even in small/POC/testing env.</li>
+<li>Explore log and metric data interactively</li>
+<li>Build dashboards and time-series visualizations</li>
+<li>Set up alerts and thresholds</li>
+<li>Monitor system health, request patterns, and errors</li>
+<li>Analyze application performance trends</li>
 </ul>
+<h4 id="example-use-cases">Example Use Cases</h4>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>How Kibana Helps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Application Monitoring</strong></td>
+<td>Visualizes response times, error rates, and latency.</td>
+</tr>
+<tr>
+<td><strong>Security Monitoring</strong></td>
+<td>Detects unusual login patterns or suspicious activity.</td>
+</tr>
+<tr>
+<td><strong>Infrastructure Insights</strong></td>
+<td>Tracks CPU, memory, and network metrics over time.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="real-world-applications">Real-World Applications</h3>
+<table>
+<thead>
+<tr>
+<th>Industry</th>
+<th>Example Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E-commerce</strong></td>
+<td>Searching products, tracking transactions, analyzing customer behavior.</td>
+</tr>
+<tr>
+<td><strong>FinTech</strong></td>
+<td>Real-time fraud detection, transaction monitoring.</td>
+</tr>
+<tr>
+<td><strong>Cloud &amp; DevOps</strong></td>
+<td>Infrastructure and log monitoring in Kubernetes or Docker Swarm.</td>
+</tr>
+<tr>
+<td><strong>Cybersecurity</strong></td>
+<td>SIEM systems using Elastic Stack to detect and respond to threats.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="in-the-tech-ecosystem">In the Tech Ecosystem</h3>
+<p>Elasticsearch and Kibana have become <strong>core components</strong> in the broader <strong>observability and DevOps ecosystem</strong>, integrating with tools like:</p>
+<ul>
+<li><strong>Prometheus &amp; Grafana</strong> (for metrics)</li>
+<li><strong>Fluentd / Filebeat / Logstash</strong> (for log ingestion)</li>
+<li><strong>OpenTelemetry</strong> (for tracing)</li>
+<li><strong>AWS OpenSearch</strong> (Elasticsearch-compatible service)</li>
+</ul>
+<p>They play a vital role in building <strong>resilient, data-driven operations</strong> across all modern infrastructures.</p>
+<hr />
 
 
 
