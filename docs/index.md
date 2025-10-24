@@ -6,10 +6,11 @@ This documentation provides a **comprehensive guide to setting up Elasticsearch 
 
 With Docker, setting up Elasticsearch and Kibana becomes **consistent, automated, and scalable**. 
 
-> **For those new to Elasticsearch and Docker:**
+**For those new to Elasticsearch and Docker:**
 [Introduction ](introduction.md)
 
----
-> **For users with prior experience:**
+**For users with prior experience:**
 [Getting Started ](GettingStarted.md)
+
+
 ---
