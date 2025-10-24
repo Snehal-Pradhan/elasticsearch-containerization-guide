@@ -9,8 +9,6 @@
       
       
       
-        <link rel="prev" href="../dockerization/">
-      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +16,7 @@
     
     
       
-        <title>Getting Started - Elasticsearch Containerization Guide</title>
+        <title>singleNodewithoutSecurity - Elasticsearch Containerization Guide</title>
       
     
     
@@ -73,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#getting-started-dockerized-elasticsearch-kibana" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              singleNodewithoutSecurity
             
           </span>
         </div>
@@ -291,19 +284,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gettingStarted/" class="md-nav__link">
         
   
   
@@ -314,7 +298,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -358,8 +341,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -378,43 +359,9 @@
   
 
 
-<h1 id="getting-started-dockerized-elasticsearch-kibana">Getting Started: Dockerized Elasticsearch &amp; Kibana</h1>
-<p>This guide walks you through <strong>four deployment approaches</strong>, from <strong>simple demonstration setups</strong> to <strong>somewhat scalable, production-ready environments</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Approach</th>
-<th>Description</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1. Single-node, no security</strong></td>
-<td>Basic single-container setup without authentication.</td>
-<td>Learning/demo only, <strong>not for production</strong>.</td>
-</tr>
-<tr>
-<td><strong>2. Single-node, with security</strong></td>
-<td>Adds authentication and TLS.</td>
-<td>Development/testing with secure access.</td>
-</tr>
-<tr>
-<td><strong>3. Multi-node cluster</strong></td>
-<td>Multiple Elasticsearch nodes using Docker Compose.</td>
-<td>Resilient, realistic environment.</td>
-</tr>
-<tr>
-<td><strong>4. Multi-node with Kubernetes</strong></td>
-<td>Kubernetes orchestration for Elasticsearch and Kibana.</td>
-<td>Production-ready with scaling and automation.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Why this order:</strong> Start simple, gradually introduce security and clustering, and finally move to orchestrated, scalable deployments.</p>
-<blockquote>
-<p><strong>Note:</strong> First approach is for demonstration purposes only and should never be used practically.</p>
-</blockquote>
+  <h1>singleNodewithoutSecurity</h1>
+
+
 
 
 
@@ -445,28 +392,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../dockerization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dockerization">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Dockerization
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">

@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../dockerization/">
+        <link rel="prev" href="../introduction/">
       
+      
+        <link rel="next" href="../gettingStarted/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Getting Started - Elasticsearch Containerization Guide</title>
+        <title>Dockerization - Elasticsearch Containerization Guide</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-dockerized-elasticsearch-kibana" class="md-skip">
+        <a href="#dockerization" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              Dockerization
             
           </span>
         </div>
@@ -269,28 +271,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../dockerization/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Dockerization
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -303,7 +283,140 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Dockerization
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dockerization
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-elasticsearch-is-often-used-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Elasticsearch is Often Used with Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Docker?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Container?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-dockerization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of Dockerization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-elasticsearch-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use Elasticsearch with Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-we-need-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why We Need Docker Compose
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why We Need Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal-of-dockerizing-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal of Dockerizing Elasticsearch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingStarted/" class="md-nav__link">
         
   
   
@@ -314,7 +427,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -361,6 +473,92 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-elasticsearch-is-often-used-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Elasticsearch is Often Used with Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Docker?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Container?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-dockerization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of Dockerization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-elasticsearch-with-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use Elasticsearch with Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-we-need-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why We Need Docker Compose
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why We Need Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal-of-dockerizing-elasticsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal of Dockerizing Elasticsearch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -378,43 +576,76 @@
   
 
 
-<h1 id="getting-started-dockerized-elasticsearch-kibana">Getting Started: Dockerized Elasticsearch &amp; Kibana</h1>
-<p>This guide walks you through <strong>four deployment approaches</strong>, from <strong>simple demonstration setups</strong> to <strong>somewhat scalable, production-ready environments</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Approach</th>
-<th>Description</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1. Single-node, no security</strong></td>
-<td>Basic single-container setup without authentication.</td>
-<td>Learning/demo only, <strong>not for production</strong>.</td>
-</tr>
-<tr>
-<td><strong>2. Single-node, with security</strong></td>
-<td>Adds authentication and TLS.</td>
-<td>Development/testing with secure access.</td>
-</tr>
-<tr>
-<td><strong>3. Multi-node cluster</strong></td>
-<td>Multiple Elasticsearch nodes using Docker Compose.</td>
-<td>Resilient, realistic environment.</td>
-</tr>
-<tr>
-<td><strong>4. Multi-node with Kubernetes</strong></td>
-<td>Kubernetes orchestration for Elasticsearch and Kibana.</td>
-<td>Production-ready with scaling and automation.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Why this order:</strong> Start simple, gradually introduce security and clustering, and finally move to orchestrated, scalable deployments.</p>
+<h1 id="dockerization">Dockerization</h1>
+<h3 id="overview">Overview</h3>
+<p>Docker is the <strong>de facto standard for containerized deployments</strong>. Developers and DevOps engineers use it to <strong>simplify deployment, standardize environments, and scale applications efficiently</strong>.</p>
+<p>Elasticsearch, with its distributed architecture and multiple dependencies, benefits significantly from containerization.</p>
 <blockquote>
-<p><strong>Note:</strong> First approach is for demonstration purposes only and should never be used practically.</p>
+<p>Experienced users can skip to <a href="../gettingStarted/">Getting Started</a> for practical setup instructions.</p>
 </blockquote>
+<hr />
+<h3 id="why-elasticsearch-is-often-used-with-docker">Why Elasticsearch is Often Used with Docker</h3>
+<p>Elasticsearch is <strong>resource-intensive and configuration-sensitive</strong>, requiring careful setup of memory, ports, volumes, and networking. Docker helps by:</p>
+<ul>
+<li>Encapsulating Elasticsearch in a <strong>consistent, reproducible environment</strong>.</li>
+<li>Simplifying <strong>multi-node deployments</strong>.</li>
+<li>Enabling <strong>rapid testing and experimentation</strong>.</li>
+<li>Integrating seamlessly with <strong>Docker Compose and Kubernetes</strong>.</li>
+</ul>
+<hr />
+<h3 id="what-is-docker">What is Docker?</h3>
+<p><strong>Docker</strong> packages applications and dependencies into <strong>lightweight, portable containers</strong>.</p>
+<ul>
+<li>Containers run consistently across <strong>development, testing, and production</strong>.</li>
+<li>Docker leverages <strong>Linux kernel features</strong> for efficient isolation.</li>
+<li>Images are <strong>immutable snapshots</strong>, versionable and shareable.</li>
+</ul>
+<hr />
+<h3 id="what-is-a-container">What is a Container?</h3>
+<p>A <strong>container</strong> is a <strong>self-contained runtime</strong> including an application and its dependencies.</p>
+<ul>
+<li>Isolated from the host system, reducing conflicts.</li>
+<li>Shares the host OS kernel, making it <strong>lightweight and fast</strong>.</li>
+<li>Easily <strong>orchestrated, scaled, and updated</strong>.</li>
+</ul>
+<hr />
+<h3 id="benefits-of-dockerization">Benefits of Dockerization</h3>
+<p>Key advantages for Elasticsearch:</p>
+<ol>
+<li><strong>Consistency</strong> – Runs identically across environments.</li>
+<li><strong>Isolation</strong> – Avoids dependency conflicts.</li>
+<li><strong>Scalability</strong> – Replicate containers for load.</li>
+<li><strong>Portability</strong> – Runs anywhere Docker is installed.</li>
+<li><strong>Rapid Deployment</strong> – Spin up instances quickly.</li>
+<li><strong>Simplified Maintenance</strong> – Update, restart, or replace containers with minimal impact.</li>
+</ol>
+<hr />
+<h3 id="why-use-elasticsearch-with-docker">Why Use Elasticsearch with Docker</h3>
+<p>Docker addresses operational challenges:</p>
+<ul>
+<li>Reduces <strong>manual configuration errors</strong>.</li>
+<li>Simplifies <strong>cluster management and scaling</strong>.</li>
+<li>Enables <strong>version-controlled deployments</strong>.</li>
+<li>Integrates with <strong>Kibana, Logstash, and Beats</strong> seamlessly.</li>
+</ul>
+<hr />
+<h3 id="why-we-need-docker-compose">Why We Need Docker Compose</h3>
+<p><strong>Docker Compose</strong> defines and runs multi-container applications:</p>
+<ul>
+<li>Configure <strong>multi-node clusters</strong> easily.</li>
+<li>Automate linking between Elasticsearch, Kibana, and other components.</li>
+<li>Mount <strong>persistent volumes</strong> and manage environment variables centrally.</li>
+<li>Ensures <strong>reproducible, fully automated deployments</strong>.</li>
+</ul>
+<hr />
+<h4 id="goal-of-dockerizing-elasticsearch">Goal of Dockerizing Elasticsearch</h4>
+<p><strong>Objective:</strong> a fully automated, zero-manual-intervention Elasticsearch deployment for development, testing, or production.</p>
+<ul>
+<li>Spin up Elasticsearch and Kibana with <strong>one command</strong></li>
+<li>Pre-configured <strong>volumes, networking, and resources</strong></li>
+<li>Repeatable deployments across environments</li>
+<li>Minimal setup overhead for <strong>focus on data and insights</strong></li>
+</ul>
 
 
 
@@ -450,7 +681,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../dockerization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dockerization">
+          <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -460,11 +691,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Dockerization
+                Introduction
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../gettingStarted/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Getting Started
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
