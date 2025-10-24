@@ -258,8 +258,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -292,8 +290,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -302,6 +298,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       Overview
@@ -309,8 +315,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-is-elasticsearch" class="md-nav__link">
     <span class="md-ellipsis">
       What is Elasticsearch?
@@ -318,8 +324,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#why-it-matters" class="md-nav__link">
     <span class="md-ellipsis">
       Why It Matters
@@ -327,8 +333,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-is-kibana" class="md-nav__link">
     <span class="md-ellipsis">
       What is Kibana?
@@ -351,8 +357,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#real-world-applications" class="md-nav__link">
     <span class="md-ellipsis">
       Real-World Applications
@@ -360,13 +366,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#in-the-tech-ecosystem" class="md-nav__link">
     <span class="md-ellipsis">
       In the Tech Ecosystem
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -417,8 +428,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -427,6 +436,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       Overview
@@ -434,8 +453,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-is-elasticsearch" class="md-nav__link">
     <span class="md-ellipsis">
       What is Elasticsearch?
@@ -443,8 +462,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#why-it-matters" class="md-nav__link">
     <span class="md-ellipsis">
       Why It Matters
@@ -452,8 +471,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-is-kibana" class="md-nav__link">
     <span class="md-ellipsis">
       What is Kibana?
@@ -476,8 +495,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#real-world-applications" class="md-nav__link">
     <span class="md-ellipsis">
       Real-World Applications
@@ -485,13 +504,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#in-the-tech-ecosystem" class="md-nav__link">
     <span class="md-ellipsis">
       In the Tech Ecosystem
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -514,12 +538,17 @@
   
 
 
-<h1 id="introduction">Introduction</h1>
+  <h1>Introduction</h1>
+
+<h2 id="introduction">Introduction</h2>
 <h3 id="overview">Overview</h3>
 <p>In modern software systems, <strong>observability</strong> — the ability to understand what’s happening inside a system based on its outputs — is crucial.
 Two technologies that have become foundational in this area are <strong>Elasticsearch</strong> and <strong>Kibana</strong>.</p>
 <p>Together, they form the backbone of the <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana), often extended to <strong>Elastic Stack</strong> (with Beats and other tools).
 They’re used to <strong>store, search, analyze, and visualize logs and metrics</strong> in real time.</p>
+<blockquote>
+<p>the text below shares a little info about elastic search and kibana for begineers.it can be easily skipped and veterans may move to <a href="../gettingStarted/">Getting Started</a>.</p>
+</blockquote>
 <hr />
 <h3 id="what-is-elasticsearch">What is Elasticsearch?</h3>
 <p><strong>Elasticsearch</strong> is a <strong>distributed, RESTful search and analytics engine</strong> built on top of Apache Lucene.
@@ -605,6 +634,7 @@ It lets developers and DevOps engineers:</p>
 <li><strong>AWS OpenSearch</strong> (Elasticsearch-compatible service)</li>
 </ul>
 <p>They play a vital role in building <strong>resilient, data-driven operations</strong> across all modern infrastructures.</p>
+<p>Often these tools are used with docker.</p>
 <hr />
 
 
