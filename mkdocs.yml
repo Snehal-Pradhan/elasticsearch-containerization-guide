@@ -20,7 +20,9 @@ repo_type: github
 nav:
   - Home: index.md
   - Introduction: introduction.md
+  - Dockerization: dockerization.md
   - Getting Started: gettingStarted.md
+  - Single Node without security: singleNodeNoSecurity.md
 
 extra_css:
   - css/footer.css
